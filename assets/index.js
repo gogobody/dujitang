@@ -2,7 +2,7 @@ let jsondata = [];
 let total_file = 2019;
 function getData(func){
     let randint = Math.floor(Math.random() * total_file);
-    let url = `/data/soul_${randint}.json`;
+    let url = `https://cdn.jsdelivr.net/gh/gogobody/dujitang/assets/data/soul_${randint}.json`;
     let httpRequest = new XMLHttpRequest();
     httpRequest.open('GET', url, true)
     httpRequest.send();
